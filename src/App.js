@@ -1,24 +1,17 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Spinner } from 'react-bootstrap';
+import { BrowserRouter, Routes } from 'react-router-dom';
 import './App.css';
+import HandleRoutes from './routes/HandleRoutes';
+import Home from './screens/home/Home';
+import Sidebar from './screens/sideBar/Sidebar';
+// import Authors from './screens/Authors/Authors';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Home/>
+    </>
   );
 }
 
